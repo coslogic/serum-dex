@@ -113,13 +113,13 @@ impl FeeTier {
     fn taker_rate(self) -> U64F64 {
         use FeeTier::*;
         match self {
-            Base => fee_tenth_of_bps(40),
-            SRM2 => fee_tenth_of_bps(39),
-            SRM3 => fee_tenth_of_bps(38),
-            SRM4 => fee_tenth_of_bps(36),
-            SRM5 => fee_tenth_of_bps(34),
-            SRM6 => fee_tenth_of_bps(32),
-            MSRM => fee_tenth_of_bps(30),
+            Base => fee_tenth_of_bps(20),
+            SRM2 => fee_tenth_of_bps(15),
+            SRM3 => fee_tenth_of_bps(14),
+            SRM4 => fee_tenth_of_bps(12),
+            SRM5 => fee_tenth_of_bps(10),
+            SRM6 => fee_tenth_of_bps(00),
+            MSRM => fee_tenth_of_bps(00),
             Stable => fee_tenth_of_bps(10),
         }
     }
