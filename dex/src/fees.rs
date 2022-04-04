@@ -107,7 +107,7 @@ impl FeeTier {
 
     #[inline]
     pub fn maker_rebate(self, pc_qty: u64) -> u64 {
-        rebate_tenth_of_bps(0).mul_u64(pc_qty).floor()
+       rebate_tenth_of_bps(0).mul_u64(pc_qty).floor()
     }
 
     fn taker_rate(self) -> U64F64 {
@@ -118,8 +118,8 @@ impl FeeTier {
             SRM3 => fee_tenth_of_bps(14),
             SRM4 => fee_tenth_of_bps(12),
             SRM5 => fee_tenth_of_bps(10),
-            SRM6 => fee_tenth_of_bps(00),
-            MSRM => fee_tenth_of_bps(00),
+            SRM6 => fee_tenth_of_bps(0),
+            MSRM => fee_tenth_of_bps(0),
             Stable => fee_tenth_of_bps(10),
         }
     }
@@ -143,7 +143,8 @@ impl FeeTier {
 
 #[inline]
 pub fn referrer_rebate(amount: u64) -> u64 {
-    amount / 5
+    amount * 0
+    //amount  * 5   cost cutting no referrer
 }
 
 #[cfg(test)]
