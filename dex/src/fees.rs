@@ -114,10 +114,10 @@ impl FeeTier {
         use FeeTier::*;
         match self {
             Base => fee_tenth_of_bps(10),
-            SRM2 => fee_tenth_of_bps(09),
-            SRM3 => fee_tenth_of_bps(08),
-            SRM4 => fee_tenth_of_bps(06),
-            SRM5 => fee_tenth_of_bps(05),
+            SRM2 => fee_tenth_of_bps(9),
+            SRM3 => fee_tenth_of_bps(8),
+            SRM4 => fee_tenth_of_bps(7),
+            SRM5 => fee_tenth_of_bps(5),
             SRM6 => fee_tenth_of_bps(0),
             MSRM => fee_tenth_of_bps(0),
             Stable => fee_tenth_of_bps(10),
