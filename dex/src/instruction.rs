@@ -21,22 +21,22 @@ use proptest_derive::Arbitrary;
 
 pub mod srm_token {
     use solana_program::declare_id;
-    declare_id!("SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt");
+    declare_id!("5jF44vRsVfFE8RLvvwAGKFFc94g3EvyTQMDSCHaS888Z");
 }
 
 pub mod msrm_token {
     use solana_program::declare_id;
-    declare_id!("MSRMcoVyrFxnSgo5uXwone5SKcGhT1KEJMFEkMEWf9L");
+    declare_id!("8JEJvsMo9DishcpKtBE3j61pKQkzcey6WidpNCLrDuXR");
 }
 
 pub mod disable_authority {
     use solana_program::declare_id;
-    declare_id!("5ZVJgwWxMsqXxRMYHXqMwH2hd4myX5Ef4Au2iUsuNQ7V");
+    declare_id!("3JBivuZVJd4kmEsqRuEQgTaSkyarV1trMEH8TYRvqWYf");
 }
 
 pub mod fee_sweeper {
     use solana_program::declare_id;
-    declare_id!("DeqYsmBd9BnrbgUwQjVH4sQWK71dEgE6eoZFw3Rp4ftE");
+    declare_id!("B6N63hzKgsFAD4unwbZoAAVjdNfnTZayxV1dpJsjMB6n");
 }
 
 #[derive(PartialEq, Eq, Debug, Clone, Serialize, Deserialize)]
